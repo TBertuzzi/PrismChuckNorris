@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             Title="{Binding Title}"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PrismChuckNorris.JokePage">
+    
+   <StackLayout Margin="10">
+        
+        <Image  Source="https://assets.chucknorris.host/img/chucknorris_logo_coloured_small@2x.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="30,0,30,30"/>
+        
+         <ActivityIndicator IsRunning="{Binding IsBusy}"/>
+
+        <Label Text="{Binding Joke.Value}" FontAttributes="Bold" FontSize="30" VerticalTextAlignment="Center" />
+        
+        <Button Text="Get new joke" FontSize="20" BorderWidth="1" Command="{Binding GetJokeCommand}"   />
+        
+   </StackLayout>
+    
+</ContentPage>
