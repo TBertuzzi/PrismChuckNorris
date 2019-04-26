@@ -14,8 +14,8 @@ namespace PrismChuckNorris.ViewModels
 
         IChuckNorrisService _chuckNorrisService;
 
-        private DelegateCommand<string> _ShowJokesCommand;
-        public DelegateCommand<string> ShowJokesCommand => _ShowJokesCommand ?? (_ShowJokesCommand = new DelegateCommand<string>(async (itemSelect) => await ExecuteShowJokesCommandd(itemSelect), (itemSelect) => !IsBusy));
+        private DelegateCommand<string> showJokeCommand;
+        public DelegateCommand<string> ShowJokeCommand => showJokeCommand ?? (showJokeCommand = new DelegateCommand<string>(async (itemSelect) => await ExecuteShowJokeCommandd(itemSelect), (itemSelect) => !IsBusy));
 
 
         protected CategoriesViewModel(INavigationService navigationService, 
@@ -96,9 +96,15 @@ namespace PrismChuckNorris.ViewModels
             }
         }
 
-        private async Task ExecuteShowJokesCommandd(string itemSelect)
+        private async Task ExecuteShowJokeCommandd(string category)
         {
+            var navigationParams = new NavigationParameters
+            {
+                {"category", category}
+            };
 
+
+            await NavigationService.NavigateAsync("JokeCategoryPage", navigationParams);
         }
 
     }

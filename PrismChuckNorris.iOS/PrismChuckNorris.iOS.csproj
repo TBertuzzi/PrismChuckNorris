@@ -144,4 +144,12 @@
   <ItemGroup>
     <Folder Include="Initializer\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_list.png" />
+    <BundleResource Include="Resources\tab_list%402x.png" />
+    <BundleResource Include="Resources\tab_list%403x.png" />
+    <BundleResource Include="Resources\tab_joke.png" />
+    <BundleResource Include="Resources\tab_joke%402x.png" />
+    <BundleResource Include="Resources\tab_joke%403x.png" />
+  </ItemGroup>
 </Project>

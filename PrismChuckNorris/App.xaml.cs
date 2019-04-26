@@ -4,6 +4,7 @@ using Prism.DryIoc;
 using Prism.Ioc;
 using PrismChuckNorris.Services;
 using PrismChuckNorris.ViewModels;
+using PrismChuckNorris.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -46,6 +47,8 @@ namespace PrismChuckNorris
             containerRegistry.RegisterForNavigation<MenuPage, MenuViewModel>();
             containerRegistry.RegisterForNavigation<CategoriesPage,CategoriesViewModel>();
             containerRegistry.RegisterForNavigation<JokePage, JokeViewModel>();
+            containerRegistry.RegisterForNavigation<JokeCategoryPage, JokeCategoryViewModel>();
+
 
             containerRegistry.RegisterSingleton<IChuckNorrisService, ChuckNorrisService>();
         }

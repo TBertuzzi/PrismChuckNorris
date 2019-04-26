@@ -33,6 +33,7 @@ namespace PrismChuckNorris.Services
             }
         }
 
+ 
         public async Task<Joke> GetRandomJoke()
         {
 
@@ -55,5 +56,33 @@ namespace PrismChuckNorris.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<Joke> GetJokeByCategory(string category)
+        {
+            try
+            {
+                var parameters = new Dictionary<string, string>
+                {
+                    { "category", category }
+                };
+
+                var response = await this.GetAsync<Joke>("random", parameters);
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    return response.Value;
+                }
+                else
+                {
+                    throw new Exception(
+                           $"HttpStatusCode: {response.StatusCode.ToString()} Message: {response.Content}");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
     }
 }

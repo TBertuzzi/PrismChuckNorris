@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
             xmlns:c="clr-namespace:PrismChuckNorris.Converters;assembly=PrismChuckNorris"
+              Icon="tab_list.png"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              
              prism:ViewModelLocator.AutowireViewModel="True"
@@ -31,7 +32,7 @@
         
         <ListView.Behaviors>
                 <b:EventToCommandBehavior EventName="ItemTapped" 
-                                          Command="{Binding ShowJokesCommand}"
+                                          Command="{Binding ShowJokeCommand}"
                                           EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
             </ListView.Behaviors>
         

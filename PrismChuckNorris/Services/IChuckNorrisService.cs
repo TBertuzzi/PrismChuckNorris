@@ -9,5 +9,6 @@ namespace PrismChuckNorris.Services
     {
         Task<IEnumerable<string>> GetCategories();
         Task<Joke> GetRandomJoke();
+        Task<Joke> GetJokeByCategory(string category);
     }
 }
