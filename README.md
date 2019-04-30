@@ -12,8 +12,9 @@ Aplicativo utilizado para Demonstrar o Prism e boas praticas de desenvolvimento.
 
 ## Links citados no Video :
 
-Habilitando link com prism : https://www.lambda3.com.br/2017/12/habilitando-linker-em-projetos-xamarin-forms-com-prism/
-HotReaload : http://high5devs.com/2019/04/hotreload-desenvolvendo-telas-mais-rapido-para-xamarin-forms-de-maneira-gratuita/
+* Habilitando link com prism : https://www.lambda3.com.br/2017/12/habilitando-linker-em-projetos-xamarin-forms-com-prism/
+
+* HotReaload : http://high5devs.com/2019/04/hotreload-desenvolvendo-telas-mais-rapido-para-xamarin-forms-de-maneira-gratuita/
 
 ## Pacotes utilizados na Demo :
 
