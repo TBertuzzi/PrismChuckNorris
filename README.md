@@ -8,7 +8,7 @@ Aplicativo utilizado para Demonstrar o Prism e boas praticas de desenvolvimento.
 
 * Como configurar o Prism : https://medium.com/@bertuzzi/mvvm-em-a%C3%A7%C3%A3o-prism-library-configurando-o-prism-eb7c9b539a88
 
-Documentação do Prism : https://github.com/angelobelchior/prism-xamarin-forms/wiki
+* Documentação do Prism : https://github.com/angelobelchior/prism-xamarin-forms/wiki
 
 ## Links citados no Video :
 
