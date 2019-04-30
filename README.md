@@ -10,6 +10,8 @@ Aplicativo utilizado para Demonstrar o Prism e boas praticas de desenvolvimento.
 
 * Documentação do Prism : https://github.com/angelobelchior/prism-xamarin-forms/wiki
 
+* Prism Template Pack : https://marketplace.visualstudio.com/items?itemName=BrianLagunas.PrismTemplatePack
+
 ## Links citados no Video :
 
 * Habilitando link com prism : https://www.lambda3.com.br/2017/12/habilitando-linker-em-projetos-xamarin-forms-com-prism/
